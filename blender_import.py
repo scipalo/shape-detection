@@ -1,7 +1,7 @@
 
 def import_native(name):
 
-    f = open("objects/"+name+".obj", "r")
+    f = open("objects/obj/"+name+".obj", "r")
     S = []
 
     for line in f:
@@ -13,7 +13,7 @@ def import_native(name):
 
 def import_ripser(name):
 
-    f = open("objects/"+name+".obj", "r")
+    f = open("objects/obj/"+name+".obj", "r")
     S = []
 
     for line in f:

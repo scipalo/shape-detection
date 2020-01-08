@@ -1,11 +1,10 @@
 import matplotlib.pyplot as plt
 from numpy.linalg import norm
+import numpy
 import networkx as nx
 import blender_import
 import itertools
 import timeit
-import numpy
-
 
 def naive_vr(points, epsilon, draw):
 
@@ -62,5 +61,5 @@ def get_naive_vr_set(models, draw = False):
 
         f.close()
 
-models = ["plane"] # "line", "circle", "sphere", "torus"]
-get_naive_vr_set(models)
+models = ["plane", "line", "circle", "sphere", "torus"]
+get_naive_vr_set(models, True)
