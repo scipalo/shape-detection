@@ -1,29 +1,14 @@
 # shape-detection
 Topology shape detection project for university class
 
-Dependencies:
+Program takes obj files, makes Vietoris-Rips simplicial complexes
+and compute betti numbers for different distances (epsilons). 
+Extracts correct betti number for choosen model (based on timeline
+and persistance of betti numbers for certain epsilon).
+Determines wich simple shape choosen model is.
 
-- Cython (pip install Cython)
-- Ripser (pip install Ripser)
+Models: line, plane, circle, sphere, torus
 
-Files: 
-
-complexes/
-- testne datoteke z VR kompleksi 
-
-objects/
-- point clouds za podamezne modele
-. ČE JIH RABIŠ; MI PIŠI JIH NARDIM
-
-main_native.py 
-- Testna implementacija izdelave vr kompleksov na več modelih.
-- nastavi draw na True, če hočeš, da izriuje
-
-main_ripers.py
-- Test deluvanja knjižnice in oblike podanih podatkov
-
-import_blender.py
-- bere
-
+Parameters to set: file names, distance (epsilon) for computing VR
 
 
