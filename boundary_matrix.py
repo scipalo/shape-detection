@@ -44,6 +44,15 @@ def betti_numbers(VRs, epsilon):
         betties[idi] = i + [0 for j in range(n - dolzina_b[idi])]
     return betties
 
+def betti_direkt(VR):
+    betties = []
+    #dolzina_b = []
+    start = timeit.default_timer()
+    b = betti(VR)
+    time = timeit.default_timer() - start
+    print('betti cas:', time)
+    return b
+
 def test_betti():
 
     C = [(1, 2, 3), (3, 4), (4, 2)]
