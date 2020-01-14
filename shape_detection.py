@@ -1,11 +1,12 @@
 
-def shape_detection(name, betti):
+def shape_detection(name, betti, fileName):
 
     # plane
     # line
     # ball
     # monkey
     if betti == [1,0,0]:
+
         # avg razdalja med točkami
         # max razdalja med točkami
 
