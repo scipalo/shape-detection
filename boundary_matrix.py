@@ -2,6 +2,7 @@ import numpy as np
 from mogutda import SimplicialComplex
 import ast
 import timeit
+import collections
 
 
 def betti(complex):
@@ -50,7 +51,7 @@ def betti_direkt(VR):
     start = timeit.default_timer()
     b = betti(VR)
     time = timeit.default_timer() - start
-    print('betti cas:', time)
+    #print('betti cas:', time)
     return b
 
 def test_betti():
