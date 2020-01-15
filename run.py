@@ -24,10 +24,9 @@ def set_vrscx_data(models, epsilon, draw=False):
 
 def run_test_set():
     draw = False
-    models = ["plane3", "line", "circle", "sphere", "torus"]
+    #models = ["plane3", "line", "circle", "sphere", "torus"]
     m = "plane3"
 
-    # SAVE VIETORI RIPS COMPLEXSES IN FILES
     for epsilon in arange(0.01, 1.0, 0.01):
         set_vrscx_data([m], epsilon, draw)
 
