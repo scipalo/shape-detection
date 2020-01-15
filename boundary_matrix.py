@@ -8,7 +8,6 @@ import collections
 def betti(complex):
     betti = []
     # find max dimension
-    max_dim = max([len(c) for c in complex])
     sim_com = SimplicialComplex(simplices=complex)
     for i in range(3):
         betti.append(sim_com.betti_number(i))
